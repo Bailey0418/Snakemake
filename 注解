@@ -1,0 +1,15 @@
+Snakemake单细胞转录组尝试构建
+***一、布置本地服务器（启用 WSL2 + 安装 Ubuntu 子系统）
+1.启用 WSL 和虚拟机平台（只做一次）
+(1)用管理员身份打开 PowerShell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+(2)重启电脑
+2.安装 WSL2（Windows 10/11）
+（1）打开 PowerShell（管理员）运行
+wsl --install
+#如果你已安装过 WSL1，可升级到 WSL2
+wsl --set-default-version 2
+（2）安装Ubuntu
+wsl --install -d Ubuntu
+

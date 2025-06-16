@@ -5,11 +5,9 @@ Snakemake单细胞转录组尝试构建
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 (2)重启电脑
-2.安装 WSL2（Windows 10/11）
+2.安装 WSL（Windows 10/11）
 （1）打开 PowerShell（管理员）运行
 wsl --install
-#如果你已安装过 WSL1，可升级到 WSL2
-wsl --set-default-version 2
-（2）安装Ubuntu
-wsl --install -d Ubuntu
-
+3.安装Ubuntu
+wsl --install -d Ubuntu --version 1
+***二、安装conda
